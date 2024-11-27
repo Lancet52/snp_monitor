@@ -1,0 +1,106 @@
+{
+  "items": [
+    {
+      "name": "habr",
+      "domain": "\uD83C\uDDF7\uD83C\uDDFA",
+      "url": "https://habr.com/ru/users/{}",
+      "urlMain": "https://habr.com/"
+    },
+    {
+      "name": "VK",
+      "domain": "\uD83C\uDDF7\uD83C\uDDFA",
+      "url": "https://vk.com/{}",
+      "urlMain": "https://vk.com/"
+    },
+    {
+      "name": "YandexMusic",
+      "domain": "\uD83C\uDDF7\uD83C\uDDFA",
+      "url": "https://music.yandex/users/{}/playlists",
+      "urlMain": "https://music.yandex"
+    },
+    {
+      "name": "pikabu",
+      "domain": "\uD83C\uDDF7\uD83C\uDDFA",
+      "url": "https://pikabu.ru/@{}",
+      "urlMain": "https://pikabu.ru/"
+    },
+    {
+      "name": "kwork",
+      "domain": "\uD83C\uDDF7\uD83C\uDDFA",
+      "url": "https://kwork.ru/user/{}",
+      "urlMain": "https://www.kwork.ru/"
+    },
+    {
+      "name": "irecommend",
+      "domain": "\uD83C\uDDF7\uD83C\uDDFA",
+      "url": "https://irecommend.ru/users/{}",
+      "urlMain": "https://irecommend.ru/"
+    },
+    {
+      "name": "igromania",
+      "domain": "\uD83C\uDDF7\uD83C\uDDFA",
+      "url": "http://forum.igromania.ru/member.php?username={}",
+      "urlMain": "http://forum.igromania.ru/"
+    },
+    {
+      "name": "hunting.ru",
+      "domain": "\uD83C\uDDF7\uD83C\uDDFA",
+      "url": "https://www.hunting.ru/forum/members/?username={}",
+      "urlMain": "https://www.hunting.ru/forum/"
+    },
+    {
+      "name": "drive2",
+      "domain": "\uD83C\uDDF7\uD83C\uDDFA",
+      "url": "https://www.drive2.ru/users/{}",
+      "urlMain": "https://www.drive2.ru/"
+    },
+    {
+      "name": "Untappd",
+      "domain": "\uD83C\uDDF7\uD83C\uDDFA",
+      "url": "https://untappd.com/user/{}",
+      "urlMain": "https://untappd.com/"
+    },
+    {
+      "name": "Telegram",
+      "domain": "\uD83C\uDF0E",
+      "url": "https://t.me/{}",
+      "urlMain": "https://t.me/"
+    },
+    {
+      "name": "Freelance.habr",
+      "domain": "\uD83C\uDDF7\uD83C\uDDFA",
+      "url": "https://freelance.habr.com/freelancers/{}",
+      "urlMain": "https://freelance.habr.com/"
+    },
+    {
+      "name": "Freelancer",
+      "domain": "\uD83C\uDF0E",
+      "url": "https://www.freelancer.com/u/{}",
+      "urlMain": "https://www.freelancer.com/"
+    },
+    {
+      "name": "GitHub",
+      "domain": "\uD83C\uDF0E",
+      "url": "https://www.github.com/{}",
+      "urlMain": "https://www.github.com/"
+    },
+    {
+      "name": "Career.habr",
+      "domain": "\uD83C\uDDF7\uD83C\uDDFA",
+      "url": "https://career.habr.com/{}",
+      "urlMain": "https://career.habr.com/"
+    },
+    {
+      "name": "Myspace",
+      "domain": "\uD83C\uDDFA\uD83C\uDDF8",
+      "url": "https://myspace.com/{}",
+      "urlMain": "https://myspace.com/"
+    },
+    {
+      "name": "2berega.spb.ru",
+      "domain": "\uD83C\uDDF7\uD83C\uDDFA",
+      "url": "https://2berega.spb.ru/user/leo/&from=peopleonline",
+      "urlMain": "https://2berega.spb.ru/"
+    }
+  ]
+}
