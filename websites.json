@@ -56,13 +56,13 @@
     },
     {
       "name": "Untappd",
-      "domain": "GL",
+      "domain": "\uD83C\uDF0E",
       "url": "https://untappd.com/user/{}",
       "urlMain": "https://untappd.com/"
     },
     {
       "name": "Telegram",
-      "domain": "GL",
+      "domain": "\uD83C\uDF0E",
       "url": "https://t.me/{}",
       "urlMain": "https://t.me/"
     },
@@ -80,7 +80,7 @@
     },
     {
       "name": "GitHub",
-      "domain": "GL",
+      "domain": "\uD83C\uDF0E",
       "url": "https://www.github.com/{}",
       "urlMain": "https://www.github.com/"
     },
@@ -99,8 +99,68 @@
     {
       "name": "2berega.spb.ru",
       "domain": "RU",
-      "url": "https://2berega.spb.ru/user/leo/&from=peopleonline",
+      "url": "https://2berega.spb.ru/user/{}/&from=peopleonline",
       "urlMain": "https://2berega.spb.ru/"
+    },
+    {
+      "name": "DonationAlerts",
+      "domain": "RU",
+      "url": "https://www.donationalerts.com/r/{}",
+      "urlMain": "https://www.donationalerts.com"
+    },
+    {
+      "name": "Change.org",
+      "domain": "\uD83C\uDF0E",
+      "url": "https://www.change.org/u/{}",
+      "urlMain": "https://www.change.org"
+    },
+    {
+      "name": "e-otzovik.ru",
+      "domain": "RU",
+      "url": "https://e-otzovik.ru/profile/{}",
+      "urlMain": "https://e-otzovik.ru/"
+    },
+    {
+      "name": "EBAY",
+      "domain": "\uD83C\uDF0E",
+      "url": "https://www.ebay.com/usr/{}",
+      "urlMain": "https://www.ebay.com/"
+    },
+    {
+      "name": "OnlyFans",
+      "domain": "\uD83C\uDF0E",
+      "url": "https://onlyfans.com/{}",
+      "urlMain": "https://onlyfans.com/"
+    },
+    {
+      "name": "Plvideo",
+      "domain": "RU",
+      "url": "https://plvideo.ru/@{}",
+      "urlMain": "https://plvideo.ru/"
+    },
+    {
+      "name": "PyPI",
+      "domain": "\uD83C\uDF0E",
+      "url": "https://pypi.org/user/{}/",
+      "urlMain": "https://pypi.org"
+    },
+    {
+      "name": "Docker Hub",
+      "domain": "\uD83C\uDF0E",
+      "url": "https://hub.docker.com/u/{}/",
+      "urlMain": "https://hub.docker.com/"
+    },
+    {
+      "name": "spletnik",
+      "domain": "RU",
+      "url": "https://spletnik.ru/user/{}",
+      "urlMain": "https://spletnik.ru/"
+    },
+    {
+      "name": "LastFM",
+      "domain": "🌎",
+      "url": "https://last.fm/user/{}",
+      "urlMain": "https://last.fm/"
     }
   ]
 }
