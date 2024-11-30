@@ -158,13 +158,13 @@
     },
     {
       "name": "LastFM",
-      "domain": "🌎",
+      "domain": "\uD83C\uDF0E",
       "url": "https://last.fm/user/{}",
       "urlMain": "https://last.fm/"
     },
     {
       "name": "geocaching",
-      "domain": "🌎",
+      "domain": "\uD83C\uDF0E",
       "url": "https://www.geocaching.com/p/default.aspx?u={}",
       "urlMain": "https://www.geocaching.com"
     },
