@@ -203,6 +203,60 @@
       "domain": "RU",
       "url": "https://ru.ruwiki.ru/wiki/Участник:{}",
       "urlMain": "https://ru.ruwiki.ru/"
+    },
+    {
+      "name": "Pastvu.com",
+      "domain": "RU",
+      "url": "https://pastvu.com/u/{}",
+      "urlMain": "https://pastvu.com"
+    },
+    {
+      "name": "Neolurk",
+      "domain": "RU",
+      "url": "https://neolurk.org/wiki/Участник:{}",
+      "urlMain": "https://neolurk.org/"
+    },
+    {
+      "name": "OK",
+      "domain": "RU",
+      "url": "https://ok.ru/{}",
+      "urlMain": "https://ok.ru"
+    },
+    {
+      "name": "Otzovik",
+      "domain": "RU",
+      "url": "https://otzovik.com/profile/{}",
+      "urlMain": "https://neolurk.org/"
+    },
+    {
+      "name": "Radiomed",
+      "domain": "RU",
+      "url": "https://radiomed.ru/users/{}",
+      "urlMain": "https://radiomed.ru/"
+    },
+    {
+      "name": "Reddit",
+      "domain": "\uD83C\uDF0E",
+      "url": "https://www.reddit.com/r/{}/",
+      "urlMain": "https://www.reddit.com/"
+    },
+    {
+      "name": "Topwar",
+      "domain": "RU",
+      "url": "https://topwar.ru/user/{}/",
+      "urlMain": "https://topwar.ru/"
+    },
+    {
+      "name": "Twitch",
+      "domain": "\uD83C\uDF0E",
+      "url": "https://www.twitch.tv/{}",
+      "urlMain": "https://www.twitch.tv"
+    },
+    {
+      "name": "YandexDzen",
+      "domain": "RU",
+      "url": "https://dzen.ru/{}",
+      "urlMain": "https://dzen.ru"
     }
   ]
 }
