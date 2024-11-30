@@ -14,11 +14,16 @@ def start():
 ███████ ██   ████ ██          ██      ██  ██████  ██   ████ ██    ██     ██████  ██   ██ 
                                                                       
 """, style="blue")
-    console.print("Введите никнейм: ", style="yellow")
-    search_username()
+    console.print("""Выберите действие:\n\n[1] - Поиск по никнейму""")
+    if input() == "1":
+        search_username()
+    else:
+        start()
+    return
 
 
 def search_username():
+    console.print("Введите никнейм: ", style="yellow")
     username = input()
 
     with open("websites.json", "r") as f:
@@ -36,12 +41,14 @@ def search_username():
             console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
     f.close()
 
-    console.print("========================================\nПоиск закончен ", style="yellow")
+    console.print("========================================\nПоиск закончен\n", style="yellow")
+    console.print(
+        "===========================================================================\nРезультат сохранен в  файл [blue underline]result.txt[/blue underline] кореневой папке с программой",
+        style="yellow")
 
     with open("result.txt", "w", encoding="utf-8") as file:
         file.write(f"Ресурсы на которых есть пользователь с ником {username}\n\n")
         for index in listdir:
-
             file.write(f"{index}\n")
     file.close()
 
