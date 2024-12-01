@@ -197,6 +197,13 @@
             "errorMsg": "Not error"
         },
         {
+          "name": "Radiomed",
+          "domain": "RU",
+          "url": "https://radiomed.ru/users/{}",
+          "urlMain": "https://radiomed.ru/",
+          "errorMsg": "\u041F\u043E\u0438\u0441\u043A"
+        },
+        {
             "name": "Reddit",
             "domain": "\uD83C\uDF0E",
             "url": "https://www.reddit.com/r/{}/",
