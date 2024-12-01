@@ -1,6 +1,7 @@
 import requests
 import json
 from rich.console import Console
+from bs4 import BeautifulSoup
 
 console = Console()
 
@@ -32,13 +33,24 @@ def search_username():
     for data in file_json["items"]:
         url_old = data["url"]
         url_new = url_old.replace("{}", f"{username}")
-        response = requests.get(f'{url_new}')
+        response = requests.get(f'{url_new}',headers={'User-Agent': 'Mozilla/5.0'})
+        soup = BeautifulSoup(response.text, "html.parser")
+        error_text = data["errorMsg"]
+        res_soup = soup.find(string=f"{error_text}")
 
-        if response.status_code == 200:
-            console.print(f"{data["domain"]}  {data["name"]}  {url_new}", style="green")
-            listdir.append(f"{data["name"]}  {url_new}")
+        if response.status_code == 404:
+            console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
+
+        elif response.status_code == 200:
+
+            if res_soup is not None:
+                console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
+            else:
+                console.print(f"{data["domain"]}  {data["name"]}  {url_new}", style="green")
+                listdir.append(f"{data["name"]}  {url_new}")
         else:
             console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
+
     f.close()
 
     console.print("========================================\nПоиск закончен\n", style="yellow")

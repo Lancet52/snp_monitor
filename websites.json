@@ -1,262 +1,242 @@
 {
-  "items": [
-    {
-      "name": "habr",
-      "domain": "RU",
-      "url": "https://habr.com/ru/users/{}",
-      "urlMain": "https://habr.com/"
-    },
-    {
-      "name": "VK",
-      "domain": "RU",
-      "url": "https://vk.com/{}",
-      "urlMain": "https://vk.com/"
-    },
-    {
-      "name": "YandexMusic",
-      "domain": "RU",
-      "url": "https://music.yandex/users/{}/playlists",
-      "urlMain": "https://music.yandex"
-    },
-    {
-      "name": "pikabu",
-      "domain": "RU",
-      "url": "https://pikabu.ru/@{}",
-      "urlMain": "https://pikabu.ru/"
-    },
-    {
-      "name": "kwork",
-      "domain": "RU",
-      "url": "https://kwork.ru/user/{}",
-      "urlMain": "https://www.kwork.ru/"
-    },
-    {
-      "name": "irecommend",
-      "domain": "RU",
-      "url": "https://irecommend.ru/users/{}",
-      "urlMain": "https://irecommend.ru/"
-    },
-    {
-      "name": "igromania",
-      "domain": "RU",
-      "url": "http://forum.igromania.ru/member.php?username={}",
-      "urlMain": "http://forum.igromania.ru/"
-    },
-    {
-      "name": "hunting.ru",
-      "domain": "RU",
-      "url": "https://www.hunting.ru/forum/members/?username={}",
-      "urlMain": "https://www.hunting.ru/forum/"
-    },
-    {
-      "name": "drive2",
-      "domain": "RU",
-      "url": "https://www.drive2.ru/users/{}",
-      "urlMain": "https://www.drive2.ru/"
-    },
-    {
-      "name": "Untappd",
-      "domain": "\uD83C\uDF0E",
-      "url": "https://untappd.com/user/{}",
-      "urlMain": "https://untappd.com/"
-    },
-    {
-      "name": "Telegram",
-      "domain": "\uD83C\uDF0E",
-      "url": "https://t.me/{}",
-      "urlMain": "https://t.me/"
-    },
-    {
-      "name": "Freelance.habr",
-      "domain": "RU",
-      "url": "https://freelance.habr.com/freelancers/{}",
-      "urlMain": "https://freelance.habr.com/"
-    },
-    {
-      "name": "Freelancer",
-      "domain": "RU",
-      "url": "https://www.freelancer.com/u/{}",
-      "urlMain": "https://www.freelancer.com/"
-    },
-    {
-      "name": "GitHub",
-      "domain": "\uD83C\uDF0E",
-      "url": "https://www.github.com/{}",
-      "urlMain": "https://www.github.com/"
-    },
-    {
-      "name": "Career.habr",
-      "domain": "RU",
-      "url": "https://career.habr.com/{}",
-      "urlMain": "https://career.habr.com/"
-    },
-    {
-      "name": "Myspace",
-      "domain": "US",
-      "url": "https://myspace.com/{}",
-      "urlMain": "https://myspace.com/"
-    },
-    {
-      "name": "2berega.spb.ru",
-      "domain": "RU",
-      "url": "https://2berega.spb.ru/user/{}/&from=peopleonline",
-      "urlMain": "https://2berega.spb.ru/"
-    },
-    {
-      "name": "DonationAlerts",
-      "domain": "RU",
-      "url": "https://www.donationalerts.com/r/{}",
-      "urlMain": "https://www.donationalerts.com"
-    },
-    {
-      "name": "Change.org",
-      "domain": "\uD83C\uDF0E",
-      "url": "https://www.change.org/u/{}",
-      "urlMain": "https://www.change.org"
-    },
-    {
-      "name": "e-otzovik.ru",
-      "domain": "RU",
-      "url": "https://e-otzovik.ru/profile/{}",
-      "urlMain": "https://e-otzovik.ru/"
-    },
-    {
-      "name": "EBAY",
-      "domain": "\uD83C\uDF0E",
-      "url": "https://www.ebay.com/usr/{}",
-      "urlMain": "https://www.ebay.com/"
-    },
-    {
-      "name": "OnlyFans",
-      "domain": "\uD83C\uDF0E",
-      "url": "https://onlyfans.com/{}",
-      "urlMain": "https://onlyfans.com/"
-    },
-    {
-      "name": "Plvideo",
-      "domain": "RU",
-      "url": "https://plvideo.ru/@{}",
-      "urlMain": "https://plvideo.ru/"
-    },
-    {
-      "name": "PyPI",
-      "domain": "\uD83C\uDF0E",
-      "url": "https://pypi.org/user/{}/",
-      "urlMain": "https://pypi.org"
-    },
-    {
-      "name": "Docker Hub",
-      "domain": "\uD83C\uDF0E",
-      "url": "https://hub.docker.com/u/{}/",
-      "urlMain": "https://hub.docker.com/"
-    },
-    {
-      "name": "spletnik",
-      "domain": "RU",
-      "url": "https://spletnik.ru/user/{}",
-      "urlMain": "https://spletnik.ru/"
-    },
-    {
-      "name": "LastFM",
-      "domain": "\uD83C\uDF0E",
-      "url": "https://last.fm/user/{}",
-      "urlMain": "https://last.fm/"
-    },
-    {
-      "name": "geocaching",
-      "domain": "\uD83C\uDF0E",
-      "url": "https://www.geocaching.com/p/default.aspx?u={}",
-      "urlMain": "https://www.geocaching.com"
-    },
-    {
-      "name": "datingRU",
-      "domain": "RU",
-      "url": "http://dating.ru/{}",
-      "urlMain": "http://dating.ru"
-    },
-    {
-      "name": "d3RU",
-      "domain": "RU",
-      "url": "https://d3.ru/user/{}/posts",
-      "urlMain": "https://d3.ru/"
-    },
-    {
-      "name": "babyblogRU",
-      "domain": "RU",
-      "url": "https://www.babyblog.ru/user/{}",
-      "urlMain": "https://www.babyblog.ru"
-    },
-    {
-      "name": "babyRU",
-      "domain": "RU",
-      "url": "https://www.baby.ru/u/{}/",
-      "urlMain": "https://www.baby.ru/"
-    },
-    {
-      "name": "Wikipedia",
-      "domain": "\uD83C\uDF0E",
-      "url": "https://en.wikipedia.org/wiki/Special:CentralAuth/{}?uselang=qqx",
-      "urlMain": "https://en.wikipedia.org"
-    },
-    {
-      "name": "RuWiki",
-      "domain": "RU",
-      "url": "https://ru.ruwiki.ru/wiki/Участник:{}",
-      "urlMain": "https://ru.ruwiki.ru/"
-    },
-    {
-      "name": "Pastvu.com",
-      "domain": "RU",
-      "url": "https://pastvu.com/u/{}",
-      "urlMain": "https://pastvu.com"
-    },
-    {
-      "name": "Neolurk",
-      "domain": "RU",
-      "url": "https://neolurk.org/wiki/Участник:{}",
-      "urlMain": "https://neolurk.org/"
-    },
-    {
-      "name": "OK",
-      "domain": "RU",
-      "url": "https://ok.ru/{}",
-      "urlMain": "https://ok.ru"
-    },
-    {
-      "name": "Otzovik",
-      "domain": "RU",
-      "url": "https://otzovik.com/profile/{}",
-      "urlMain": "https://neolurk.org/"
-    },
-    {
-      "name": "Radiomed",
-      "domain": "RU",
-      "url": "https://radiomed.ru/users/{}",
-      "urlMain": "https://radiomed.ru/"
-    },
-    {
-      "name": "Reddit",
-      "domain": "\uD83C\uDF0E",
-      "url": "https://www.reddit.com/r/{}/",
-      "urlMain": "https://www.reddit.com/"
-    },
-    {
-      "name": "Topwar",
-      "domain": "RU",
-      "url": "https://topwar.ru/user/{}/",
-      "urlMain": "https://topwar.ru/"
-    },
-    {
-      "name": "Twitch",
-      "domain": "\uD83C\uDF0E",
-      "url": "https://www.twitch.tv/{}",
-      "urlMain": "https://www.twitch.tv"
-    },
-    {
-      "name": "YandexDzen",
-      "domain": "RU",
-      "url": "https://dzen.ru/{}",
-      "urlMain": "https://dzen.ru"
-    }
-  ]
+    "items": [
+        {
+            "name": "2berega.spb.ru",
+            "domain": "RU",
+            "url": "https://2berega.spb.ru/user/{}/&from=peopleonline",
+            "urlMain": "https://2berega.spb.ru/",
+            "errorMsg": "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0020\u043D\u0435\u0020\u043D\u0430\u0439\u0434\u0435\u043D"
+        },
+        {
+            "name": "babyRU",
+            "domain": "RU",
+            "url": "https://www.baby.ru/u/{}/",
+            "urlMain": "https://www.baby.ru/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "Career.habr",
+            "domain": "RU",
+            "url": "https://career.habr.com/{}",
+            "urlMain": "https://career.habr.com/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "Championat",
+            "domain": "RU",
+            "url": "https://www.championat.com/user/{}",
+            "urlMain": "https://www.championat.com/",
+            "errorMsg": "\u0417\u0430\u043F\u0440\u0430\u0448\u0438\u0432\u0430\u0435\u043C\u0430\u044F\u0020\u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430\u0020\u043D\u0435\u0020\u043D\u0430\u0439\u0434\u0435\u043D\u0430"
+        },
+        {
+            "name": "d3RU",
+            "domain": "RU",
+            "url": "https://d3.ru/user/{}/posts",
+            "urlMain": "https://d3.ru/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "datingRU",
+            "domain": "RU",
+            "url": "http://dating.ru/{}",
+            "urlMain": "http://dating.ru",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "Docker Hub",
+            "domain": "\uD83C\uDF0E",
+            "url": "https://hub.docker.com/u/{}/",
+            "urlMain": "https://hub.docker.com/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "DonationAlerts",
+            "domain": "RU",
+            "url": "https://www.donationalerts.com/r/{}",
+            "urlMain": "https://www.donationalerts.com",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "drive2",
+            "domain": "RU",
+            "url": "https://www.drive2.ru/users/{}",
+            "urlMain": "https://www.drive2.ru/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "e-otzovik.ru",
+            "domain": "RU",
+            "url": "https://e-otzovik.ru/profile/{}",
+            "urlMain": "https://e-otzovik.ru/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "EBAY",
+            "domain": "\uD83C\uDF0E",
+            "url": "https://www.ebay.com/usr/{}",
+            "urlMain": "https://www.ebay.com/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "Freelance.habr",
+            "domain": "RU",
+            "url": "https://freelance.habr.com/freelancers/{}",
+            "urlMain": "https://freelance.habr.com/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "Freelancer",
+            "domain": "RU",
+            "url": "https://www.freelancer.com/u/{}",
+            "urlMain": "https://www.freelancer.com/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "geocaching",
+            "domain": "\uD83C\uDF0E",
+            "url": "https://www.geocaching.com/p/default.aspx?u={}",
+            "urlMain": "https://www.geocaching.com",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "GitHub",
+            "domain": "\uD83C\uDF0E",
+            "url": "https://www.github.com/{}",
+            "urlMain": "https://www.github.com/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "habr",
+            "domain": "RU",
+            "url": "https://habr.com/ru/users/{}",
+            "urlMain": "https://habr.com/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "hunting.ru",
+            "domain": "RU",
+            "url": "https://www.hunting.ru/forum/members/?username={}",
+            "urlMain": "https://www.hunting.ru/forum/",
+            "errorMsg": "\u0423\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u0439 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0434\u0440\u0443\u0433\u043e\u0435 \u0438\u043c\u044f."
+        },
+        {
+            "name": "igromania",
+            "domain": "RU",
+            "url": "http://forum.igromania.ru/member.php?username={}",
+            "urlMain": "http://forum.igromania.ru/",
+            "errorMsg": "\u041f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c \u043d\u0435 \u0437\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043e\u0432\u0430\u043d \u0438 \u043d\u0435 \u0438\u043c\u0435\u0435\u0442 \u043f\u0440\u043e\u0444\u0438\u043b\u044f \u0434\u043b\u044f \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0430."
+        },
+        {
+            "name": "irecommend",
+            "domain": "RU",
+            "url": "https://irecommend.ru/users/{}",
+            "urlMain": "https://irecommend.ru/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "kwork",
+            "domain": "RU",
+            "url": "https://kwork.ru/user/{}",
+            "urlMain": "https://www.kwork.ru/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "LastFM",
+            "domain": "\uD83C\uDF0E",
+            "url": "https://last.fm/user/{}",
+            "urlMain": "https://last.fm/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "Myspace",
+            "domain": "US",
+            "url": "https://myspace.com/{}",
+            "urlMain": "https://myspace.com/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "Neolurk",
+            "domain": "RU",
+            "url": "https://neolurk.org/wiki/Участник:{}",
+            "urlMain": "https://neolurk.org/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "OK",
+            "domain": "RU",
+            "url": "https://ok.ru/{}",
+            "urlMain": "https://ok.ru",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "Otzovik",
+            "domain": "RU",
+            "url": "https://otzovik.com/profile/{}",
+            "urlMain": "https://neolurk.org/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "pikabu",
+            "domain": "RU",
+            "url": "https://pikabu.ru/@{}",
+            "urlMain": "https://pikabu.ru/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "Plvideo",
+            "domain": "RU",
+            "url": "https://plvideo.ru/@{}",
+            "urlMain": "https://plvideo.ru/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "PyPI",
+            "domain": "\uD83C\uDF0E",
+            "url": "https://pypi.org/user/{}/",
+            "urlMain": "https://pypi.org",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "Reddit",
+            "domain": "\uD83C\uDF0E",
+            "url": "https://www.reddit.com/r/{}/",
+            "urlMain": "https://www.reddit.com/",
+            "errorMsg": "Community not found"
+        },
+        {
+            "name": "RuWiki",
+            "domain": "RU",
+            "url": "https://ru.ruwiki.ru/wiki/Участник:{}",
+            "urlMain": "https://ru.ruwiki.ru/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "spletnik",
+            "domain": "RU",
+            "url": "https://spletnik.ru/user/{}",
+            "urlMain": "https://spletnik.ru/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "Topwar",
+            "domain": "RU",
+            "url": "https://topwar.ru/user/{}/",
+            "urlMain": "https://topwar.ru/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "Untappd",
+            "domain": "\uD83C\uDF0E",
+            "url": "https://untappd.com/user/{}",
+            "urlMain": "https://untappd.com/",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "VK",
+            "domain": "RU",
+            "url": "https://vk.com/{}",
+            "urlMain": "https://vk.com/",
+            "errorMsg": "Not error"
+        }
+    ]
 }
