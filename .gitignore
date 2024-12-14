@@ -1,9 +1,5 @@
 .venv
 .idea
+.test_files
 result.txt
-file.json
-sorted_file.json
-result.txt
-sorted_json.py
-find_errorMSG.py
-test.py
+
