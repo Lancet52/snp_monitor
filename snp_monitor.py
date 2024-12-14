@@ -5,6 +5,8 @@ import urllib3.exceptions
 from rich.console import Console
 from bs4 import BeautifulSoup
 
+from snp_basefunctions import status_code, message
+
 console = Console()
 
 
@@ -38,44 +40,10 @@ def search_username():
 
         # Если тип ошибки Status Code (нет отклика от страницы)
         if data["errorType"] == "status_code":
-            try:
-                response = requests.get(url=url_new, headers={'User-Agent': 'Mozilla/5.0'}, timeout=7)
-                if response.status_code == 404:
-                    console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
-                elif response.status_code == 200:
-                    console.print(f"{data["domain"]}  {data["name"]}  {url_new}", style="green")
-                    listdir.append(f"{data["name"]}  {url_new}")
-                else:
-                    console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
-            except requests.Timeout:
-                console.print(f"{data["domain"]}  {data["name"]}: Истёк таймаут подключения", style="yellow")
-            except requests.RequestException:
-                console.print(f"{data["domain"]}  {data["name"]}: Ошибка при доступе. Истёк таймаут подулючения",
-                              style="yellow")
+            status_code(listdir, data, url_new)
 
         elif data["errorType"] == "message":
-            try:
-                response = requests.get(url=url_new, headers={'User-Agent': 'Mozilla/5.0'}, timeout=7)
-                soup = BeautifulSoup(response.text, "html.parser")
-                error_text = data["errorMsg"]
-                res_soup = soup.find(string=f"{error_text}")
-                if response.status_code == 404:
-                    console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
-
-                elif response.status_code == 200:
-
-                    if res_soup is not None:
-                        console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
-                    else:
-                        console.print(f"{data["domain"]}  {data["name"]}  {url_new}", style="green")
-                        listdir.append(f"{data["name"]}  {url_new}")
-                else:
-                    console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
-            except requests.Timeout:
-                console.print(f"{data["domain"]}  {data["name"]}: Истёк таймаут подключения", style="yellow")
-            except requests.RequestException:
-                console.print(f"{data["domain"]}  {data["name"]}: Ошибка при доступе. Истёк таймаут подключения",
-                              style="yellow")
+            message(listdir, data, url_new)
 
         websites_file.close()
 
