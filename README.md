@@ -2,3 +2,5 @@
 
 
 ![2024-11-30_19-15-17](https://github.com/user-attachments/assets/b3f26e2f-cb9c-402a-8b28-55aec155a57d)
+
+Запуск: snp_monitor.py
