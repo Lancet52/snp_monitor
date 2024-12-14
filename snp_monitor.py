@@ -29,8 +29,8 @@ def search_username():
     console.print("Введите никнейм: ", style="yellow")
     username = input()
 
-    with open("websites.json", "r") as f:
-        file_json = json.load(f)
+    with open("websites.json", "r") as websites_file:
+        file_json = json.load(websites_file)
     listdir = []
     for data in file_json["items"]:
         url_old = data["url"]
@@ -39,14 +39,14 @@ def search_username():
         # Если тип ошибки Status Code (нет отклика от страницы)
         if data["errorType"] == "status_code":
             try:
-                response = requests.get(url=url_new, headers={'User-Agent': 'Mozilla/5.0'}, timeout=2)
+                response = requests.get(url=url_new, headers={'User-Agent': 'Mozilla/5.0'}, timeout=7)
                 if response.status_code == 404:
                     console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
                 elif response.status_code == 200:
                     console.print(f"{data["domain"]}  {data["name"]}  {url_new}", style="green")
                     listdir.append(f"{data["name"]}  {url_new}")
                 else:
-                    console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="blue")
+                    console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
             except requests.Timeout:
                 console.print(f"{data["domain"]}  {data["name"]}: Истёк таймаут подключения", style="yellow")
             except requests.RequestException:
@@ -55,7 +55,7 @@ def search_username():
 
         elif data["errorType"] == "message":
             try:
-                response = requests.get(url=url_new, headers={'User-Agent': 'Mozilla/5.0'}, timeout=2)
+                response = requests.get(url=url_new, headers={'User-Agent': 'Mozilla/5.0'}, timeout=7)
                 soup = BeautifulSoup(response.text, "html.parser")
                 error_text = data["errorMsg"]
                 res_soup = soup.find(string=f"{error_text}")
@@ -77,18 +77,18 @@ def search_username():
                 console.print(f"{data["domain"]}  {data["name"]}: Ошибка при доступе. Истёк таймаут подключения",
                               style="yellow")
 
-        f.close()
+        websites_file.close()
 
     console.print("========================================\nПоиск закончен\n", style="yellow")
     console.print(
         "===========================================================================\nРезультат сохранен в  файл [blue underline]result.txt[/blue underline] кореневой папке с программой",
         style="yellow")
 
-    with open("result.txt", "w", encoding="utf-8") as file:
-        file.write(f"Ресурсы на которых есть пользователь с ником {username}\n\n")
+    with open("result.txt", "w", encoding="utf-8") as result_file:
+        result_file.write(f"Ресурсы на которых есть пользователь с ником {username}\n\n")
         for index in listdir:
-            file.write(f"{index}\n")
-    file.close()
+            result_file.write(f"{index}\n")
+    result_file.close()
 
     return
 
