@@ -1,5 +1,7 @@
 import requests
 import json
+
+import urllib3.exceptions
 from rich.console import Console
 from bs4 import BeautifulSoup
 
@@ -33,35 +35,49 @@ def search_username():
     for data in file_json["items"]:
         url_old = data["url"]
         url_new = url_old.replace("{}", f"{username}")
-        response = requests.get(f'{url_new}', headers={'User-Agent': 'Mozilla/5.0'})
-        soup = BeautifulSoup(response.text, "html.parser")
-        error_text = data["errorMsg"]
-        res_soup = soup.find(string=f"{error_text}")
 
-        #Если тип ошибки Status Code (нет отклика от страницы)
+        # Если тип ошибки Status Code (нет отклика от страницы)
         if data["errorType"] == "status_code":
-            if response.status_code == 404:
-                console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
-            elif response.status_code == 200:
-                console.print(f"{data["domain"]}  {data["name"]}  {url_new}", style="green")
-                listdir.append(f"{data["name"]}  {url_new}")
-            else:
-                console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
-        elif data["errorType"] == "message":
-            if response.status_code == 404:
-                console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
-
-            elif response.status_code == 200:
-
-                if res_soup is not None:
+            try:
+                response = requests.get(url=url_new, headers={'User-Agent': 'Mozilla/5.0'}, timeout=2)
+                if response.status_code == 404:
                     console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
-                else:
+                elif response.status_code == 200:
                     console.print(f"{data["domain"]}  {data["name"]}  {url_new}", style="green")
                     listdir.append(f"{data["name"]}  {url_new}")
-            else:
-                console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
+                else:
+                    console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="blue")
+            except requests.Timeout:
+                console.print(f"{data["domain"]}  {data["name"]}: Истёк таймаут подключения", style="yellow")
+            except requests.RequestException:
+                console.print(f"{data["domain"]}  {data["name"]}: Ошибка при доступе. Истёк таймаут подулючения",
+                              style="yellow")
 
-    f.close()
+        elif data["errorType"] == "message":
+            try:
+                response = requests.get(url=url_new, headers={'User-Agent': 'Mozilla/5.0'}, timeout=2)
+                soup = BeautifulSoup(response.text, "html.parser")
+                error_text = data["errorMsg"]
+                res_soup = soup.find(string=f"{error_text}")
+                if response.status_code == 404:
+                    console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
+
+                elif response.status_code == 200:
+
+                    if res_soup is not None:
+                        console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
+                    else:
+                        console.print(f"{data["domain"]}  {data["name"]}  {url_new}", style="green")
+                        listdir.append(f"{data["name"]}  {url_new}")
+                else:
+                    console.print(f"{data["domain"]}  {data["name"]}: Нет данных", style="red")
+            except requests.Timeout:
+                console.print(f"{data["domain"]}  {data["name"]}: Истёк таймаут подключения", style="yellow")
+            except requests.RequestException:
+                console.print(f"{data["domain"]}  {data["name"]}: Ошибка при доступе. Истёк таймаут подключения",
+                              style="yellow")
+
+        f.close()
 
     console.print("========================================\nПоиск закончен\n", style="yellow")
     console.print(

@@ -87,13 +87,6 @@
             "urlMain": "https://www.ebay.com/",
             "errorType" : "status_code",
             "errorMsg": "Not error"
-        },{
-            "name": "forum.guns.ru",
-            "domain": "RU",
-            "url": "https://forum.guns.ru/forummisc/blog/{}",
-            "urlMain": "https://forum.guns.ru/",
-            "errorType" : "message",
-            "errorMsg": "<!--form method=POST action=https://forum.guns.ru/forummisc/blog/search><tr>\n<td align=right colspan=6><input type=text name=word value=''><input type=submit value=search><input type=checkbox name=user value=1>user\n</td></tr></form-->"
         },
         {
             "name": "Freelance.habr",
@@ -284,6 +277,14 @@
             "domain": "RU",
             "url": "https://vk.com/{}",
             "urlMain": "https://vk.com/",
+            "errorType" : "status_code",
+            "errorMsg": "Not error"
+        },
+        {
+            "name": "YouTube",
+            "domain": "\uD83C\uDF0E",
+            "url": "https://www.youtube.com/@{}",
+            "urlMain": "https://www.youtube.com/",
             "errorType" : "status_code",
             "errorMsg": "Not error"
         }
